@@ -1,0 +1,108 @@
+@cherset "utf-8";
+
+article {
+    height: 500px;
+}
+
+section {
+    height: 500px;
+}
+form {
+    margin: 0 auto;
+    /*width:;*/
+    padding: 1.5em 1.5em 0.4em;
+    border: 1px solid #fff;
+    font-size: 1.5em;
+    height: auto;
+}
+
+form .tag + .tag {
+    margin-top: 2em;
+}
+
+label {
+    display: inline-block;
+    width: 5em;
+    text-align: right;
+    
+}
+
+input, textarea {
+    font: 4em;
+    width: 20em;
+    height: 3em;
+    color: #989898;
+    box-sizing: border-box;
+    /*border: 1px solid #fff;*/
+    box-shadow: inset 1px 1px 2px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+    box-shadow: inset 1px 1px 10px 3px #ffc0cb;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+    resize: vertical;
+}
+
+.button {
+    padding-left: 5em;
+    margin-left: .5em;
+    margin-top: 1em;
+}
+button + button {
+    margin-left: 20px;
+}
+
+button {
+    font-size: 0.8em;
+    color: #fff;
+    padding: 5px  15px 5px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    box-shadow: /*inset 1px 1px 10px 3px #ffc0cb,*/ 1px 1px 5px #000;
+}
+
+form p {
+    padding: 10px;
+    font-size: 0.6em;
+    text-align: center;
+}
+
+/* 640 */
+@media screen and (max-width: 547px){
+    article {
+        height: auto;
+    }
+
+    section {
+        height: auto;
+    }
+    
+    form {
+        padding: 0.7em;
+    }
+    
+    label,input, textarea,button {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 10px;
+    }
+    
+   /* button + button {
+        margin: 0;   
+    }*/
+    
+    .button {
+        display: flex;
+        justify-content: center;
+        padding-left: 0em;
+        margin-left: 0em;
+    }
+
+
+
+}

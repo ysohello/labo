@@ -1,0 +1,70 @@
+@cherset "utf-8";
+
+section {
+    height: 600px;
+}
+.gr {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 1010px;
+    
+    
+}
+.item {
+    width: 250px;
+    height: 230px;
+    border: 1px solid #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    display: none;
+    transition: .8s;
+}
+
+.item img {
+    padding: 20px 20px 0px;
+    background-size: cover;
+}
+
+.item .mon {
+    height: 100%;
+    position: absolute;
+    bottom: -85%;
+    width: 100%;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+
+.item:hover .mon {
+    bottom: 0;
+}
+
+/* 827 */
+@media screen and (max-width: 827px){
+    
+    article {
+        height: auto;
+    }
+    section {
+        height: 800px;
+    }
+}
+@media screen and (max-width: 640px){
+    
+    section {
+        height: 700px;
+    }
+    .item {
+        width: 50%;
+        height: 50%;
+    }
+    .item img {
+        padding: 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
